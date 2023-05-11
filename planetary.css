@@ -106,3 +106,8 @@ body{
 .our_team .team_member .member_img:hover .social_media{
   transform: scale(1);
 }
+footer{
+  font-size: 40px;
+  font-family: 'Exo 2', sans-serif;
+  color: gray;
+}
