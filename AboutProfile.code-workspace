@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../Desktop/JavJav"
+	},
+	{
+		"path": "../AlexaJS"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "AboutProfile"
+  }
+}
