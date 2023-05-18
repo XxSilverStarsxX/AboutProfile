@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webcam Display</title>
+    <style>
+      #videoContainer {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 200px;
+        height: auto;
+        border: 1px solid #ccc;
+      }
+
+      #video {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="videoContainer">
+      <video id="video" autoplay></video>
+    </div>
+
+    <script>
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          var video = document.getElementById('video');
+          video.srcObject = stream;
+        })
+        .catch(function (error) {
+          console.log('Error accessing webcam:', error);
+        });
+    </script>
+  </body>
+</html>
