@@ -1,37 +1,105 @@
+
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Webcam Display</title>
-    <style>
-      #videoContainer {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        width: 200px;
-        height: auto;
-        border: 1px solid #ccc;
-      }
-
-      #video {
-        width: 100%;
-        height: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="videoContainer">
-      <video id="video" autoplay></video>
+<head>
+  <div class="Links">
+    <a href="page1.html">Home</a>
+        <a href="page2.html">Dream</a>
+        <a href="page3.html">James Baxter</a>
+        <a href="page4.html">Planetary</a>
+        <a href="page5.html">Buffalo</a>
+        <a href="page6.html">BOARD</a>
+        <a href="page7.html">YOB</a>
+        <a href="page8.html">Monster</a>
     </div>
+  <title>Webcam Display</title>
+  <style>
+    h3{
+      font-family: Eater;
+        src: url(Eater/Eater-Regular.ttf);
+        font-size: 25px;
+        color: maroon;
+        -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: crimson;
+    text-align: center;
+    }
+    figcaption{
+      font-family: Eater;
+        src: url(Eater/Eater-Regular.ttf);
+        font-size: 25px;
+        color: maroon;
+        -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: crimson;
+    text-align: center;
+    }
+    @font-face{
+        font-family: Eater;
+        src: url(Eater/Eater-Regular.ttf);
+    }
+    body{
+        background-image: url(download.jpg);
+        
+    }
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 12%;
+    }
 
-    <script>
-      navigator.mediaDevices.getUserMedia({ video: true })
-        .then(function (stream) {
-          var video = document.getElementById('video');
-          video.srcObject = stream;
-        })
-        .catch(function (error) {
-          console.log('Error accessing webcam:', error);
-        });
-    </script>
-  </body>
+    .image-grid img {
+      width: 25%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 5px;
+    }
+
+    #videoContainer {
+      position: absolute;
+      top: 10px;
+      right: 5px;
+      width: 200px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    #video {
+      width: 100%;
+      height: auto;
+      -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+    }
+  </style>
+</head>
+<body>
+    <h3>Monster‎ ‎ ‎ ‎ ‎ ‎ ⇒ </h3>
+  <div id="videoContainer">
+    <video id="video" autoplay></video>
+  </div>
+  <figcaption>The Phantom of Regression and Stagnation</figcaption>
+
+  <div class="image-grid">
+    <img src="Spider_Man_meme.jpg" alt="Image 1">
+    <img src="depositphotos_21756747-stock-photo-the-ball-and-chain.jpg" alt="Image 2">
+    <img src="stagnate.gif" alt="Image 3">
+    <img src="hunter-aiming-with-a-rifle-ink-black-and-white-drawing-T5AGG0.jpg" alt="Image 4">
+    <img src="download (1).jpg" alt="Image 5">
+    <img src="repeat-glyph-black-icon-vector.jpg" alt="Image 6">
+    <img src="squidward-sleepless.gif" alt="Image 7">
+    <img src="dcaba40588bfc01fa408d310714ebb9d.jpg" alt="Image 8">
+    <img src="CoolClips_hand0002.png" alt="Image 9">
+    <img src="an attack on your future.png" alt="Image 10">
+  </div>
+
+  <script>
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        var video = document.getElementById('video');
+        video.srcObject = stream;
+      })
+      .catch(function(error) {
+        console.log('Error accessing webcam:', error);
+      });
+  </script>
+</body>
 </html>

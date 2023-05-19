@@ -3,6 +3,11 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 1366px 768px;
-   
+    font-family: 'Pokemon Solid';
+    src: url(pokemon/PokemonSolid.ttf);
 }
 
+@font-face{
+    font-family: 'Pokemon Solid';
+    src: url(pokemon/PokemonSolid.ttf);
+}
